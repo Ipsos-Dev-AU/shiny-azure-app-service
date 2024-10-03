@@ -25,6 +25,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.ACR_ENDPOINT }}/${{ env.IMAGE_NAME }}
+          tags: auipsosshiny.azurecr.io/${{ env.IMAGE_NAME }}
 
 
