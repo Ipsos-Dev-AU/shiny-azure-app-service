@@ -18,13 +18,13 @@ jobs:
       - name: Log into registry
         uses: docker/login-action@v3
         with:
-          registry: ${{ secrets.ACR_ENDPOINT }}
+          registry: auipsosshiny.azurecr.io
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.ACR_ENDPOINT }}/${{ env.IMAGE_NAME }}
+          tags: auipsosshiny.azurecr.io/${{ env.IMAGE_NAME }}
 
 
