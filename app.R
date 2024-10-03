@@ -85,6 +85,7 @@ server <- function(input, output, session) {
     if (!(guess %in% strsplit(game_state$word, "")[[1]])) {
       # Incorrect guess
       game_state$incorrect_guesses <- game_state$incorrect_guesses + 1
+      print(game_state$word)
     }
     
     if (game_state$incorrect_guesses >= game_state$remaining_chances) {
