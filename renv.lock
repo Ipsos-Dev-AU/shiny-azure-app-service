@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.2.2",
+    "Version": "4.3.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -330,6 +330,25 @@
         "tools"
       ],
       "Hash": "18e9c28c1d3ca1560ce30658b22ce104"
+    },
+    "odbc": {
+      "Package": "odbc",
+      "Version": "1.5.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "DBI",
+        "R",
+        "Rcpp",
+        "bit64",
+        "blob",
+        "cli",
+        "hms",
+        "lifecycle",
+        "methods",
+        "rlang"
+      ],
+      "Hash": "0609d24c52744c675f8578622c33d5fa"
     },
     "pkgconfig": {
       "Package": "pkgconfig",
