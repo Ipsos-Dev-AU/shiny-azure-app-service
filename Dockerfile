@@ -4,7 +4,6 @@ FROM rocker/r-ver:4.2.0
 RUN apt-get update && apt-get install -y \
     unixodbc \
     unixodbc-dev \
-    libiodbc2-dev \
     && apt-get clean
 
 # Set renv version
