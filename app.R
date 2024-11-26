@@ -1,4 +1,4 @@
-print("first print")
+print("first print w/o renv")
 library(shiny)
 library(jsonlite)
 library(DBI)
